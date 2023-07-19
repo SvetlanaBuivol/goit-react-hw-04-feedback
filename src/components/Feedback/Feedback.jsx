@@ -11,7 +11,10 @@ const Feedback = ({ options, onLeaveFeedback }) => (
             option={option}
             active={option === 'good'}
             type="button"
-            onClick={() => onLeaveFeedback(option)}
+            onClick={() => {
+              console.log('on click btn')
+              onLeaveFeedback(option)
+            }}
           >
             {option}
           </Button>
