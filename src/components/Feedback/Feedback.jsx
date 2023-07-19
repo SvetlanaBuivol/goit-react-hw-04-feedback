@@ -13,7 +13,6 @@ const Feedback = ({ options, onLeaveFeedback }) => (
             type="button"
             onClick={() => {
               console.log('on click btn')
-              onLeaveFeedback(option)
             }}
           >
             {option}
